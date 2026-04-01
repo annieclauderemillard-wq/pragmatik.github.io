@@ -355,7 +355,7 @@ section{padding:4rem 1.5rem}
 
 <footer><div class="footer-inner"><span class="footer-logo"><svg width="20" height="20" viewBox="0 0 200 200" style="vertical-align:middle;margin-right:8px"><rect x="25" y="25" width="68" height="68" rx="7" fill="#a3b294"/><rect x="107" y="25" width="68" height="68" rx="7" fill="#b07a56" opacity="0.6"/><rect x="25" y="107" width="68" height="68" rx="7" fill="#b07a56" opacity="0.35"/><rect x="107" y="107" width="68" height="68" rx="7" fill="#8a9a7a" opacity="0.6"/></svg>PRAGMATIK</span><p>&#169; 2026 PRAGMATIK Strat&#233;gies d&#8217;affaires</p></div></footer>
 
-var hamburger=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks');
+<script> var hamburger=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks');
 hamburger.addEventListener('click',function(){navLinks.classList.toggle('open');var s=hamburger.querySelectorAll('span');if(navLinks.classList.contains('open')){s[0].style.transform='rotate(45deg) translate(5px,5px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translate(5px,-5px)';}else{s[0].style.transform='none';s[1].style.opacity='1';s[2].style.transform='none';}});
 navLinks.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){navLinks.classList.remove('open');var s=hamburger.querySelectorAll('span');s[0].style.transform='none';s[1].style.opacity='1';s[2].style.transform='none';});});
 var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
