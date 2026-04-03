@@ -42,10 +42,10 @@ body{background:var(--lin-clair);color:var(--texte);font-family:var(--sans);font
 .pixel-cluster{position:absolute;pointer-events:none}
 
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:.9rem 3rem;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(24px);background:rgba(58,77,46,.88);border-bottom:1px solid rgba(255,255,255,.05);animation:fadeIn 1s ease both}
-.nav-logo{text-decoration:none;display:flex;flex-direction:column;align-items:center}
+.nav-logo{text-decoration:none;display:flex;flex-direction:column;align-items:flex-start}
 .nav-logo-top{display:flex;align-items:center;gap:.6rem}
 .nav-logo-name{font-size:1.35rem;font-weight:700;letter-spacing:.16em;color:var(--lin-clair)}
-.nav-logo-sub{font-weight:600;color:var(--sauge-clair);letter-spacing:.16em;font-size:.55rem;text-transform:uppercase}
+.nav-logo-sub{font-weight:600;color:var(--sauge-clair);letter-spacing:.16em;font-size:.55rem;text-transform:uppercase;margin-left:calc(28px + .6rem)}
 .nav-links{display:flex;gap:2.5rem;align-items:center}
 .nav-links a{color:var(--sauge-pale);text-decoration:none;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;transition:color .3s;position:relative}
 .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--terra);border-radius:1px;transition:width .4s cubic-bezier(.22,1,.36,1)}
