@@ -947,8 +947,8 @@ footer p{font-size:.72rem;letter-spacing:.06em;font-weight:500}
 }
 @media(max-width:600px){
   .hero{
-    padding:8rem 1.5rem 8rem;
-    align-items:center;
+    padding:8rem 1.5rem 4rem;
+    align-items:flex-end;
     justify-content:center;
     min-height:100vh;
   }
@@ -956,30 +956,33 @@ footer p{font-size:.72rem;letter-spacing:.06em;font-weight:500}
   .hero-plant{display:block}
   /* Petite (moyenne) plante : cachée sur mobile */
   .hero-plant-medium{display:none}
-  /* Grande plante (monstera) : en bas-droite */
+  /* Grande plante (monstera) : à droite, plus petite, décorative */
   .hero-plant-large{
-    width:130px;max-width:36vw;
-    bottom:0;top:auto;
-    right:-4%;left:auto;
+    width:95px;max-width:26vw;
+    top:auto;bottom:2vh;
+    right:-2%;left:auto;
+    height:auto;
   }
+  .hero-plant-large svg{width:100%;height:auto;display:block}
+  /* Femme : pleine hauteur à gauche */
   .hero-woman{
     left:-10%;right:auto;top:0;bottom:auto;
-    width:68%;max-width:none;height:55vh;
+    width:62%;max-width:none;height:75vh;
     opacity:.55;
     background-size:contain;
     background-position:left top;
-    /* Mask spécifique mobile : fond avant le bas pour libérer la zone du texte */
     mask-image:
-      linear-gradient(to bottom, transparent 0%, black 10%, black 65%, transparent 95%),
+      linear-gradient(to bottom, transparent 0%, black 8%, black 88%, transparent 100%),
       linear-gradient(to right, black 0%, black 55%, transparent 95%);
     -webkit-mask-image:
-      linear-gradient(to bottom, transparent 0%, black 10%, black 65%, transparent 95%),
+      linear-gradient(to bottom, transparent 0%, black 8%, black 88%, transparent 100%),
       linear-gradient(to right, black 0%, black 55%, transparent 95%);
     mask-composite:intersect;
     -webkit-mask-composite:source-in;
     filter:saturate(.78) contrast(.95);
   }
-  .hero-content{margin:0;text-align:center;max-width:100%}
+  /* Position texte/bouton : un peu plus bas que le centre, pas tout en bas */
+  .hero-content{margin:0 0 8vh;text-align:center;max-width:100%}
   .hero-ctas{justify-content:center}
   .hero-keywords{font-size:.95rem;letter-spacing:.13em;line-height:2;margin-bottom:1.6rem}
   section{padding:4.5rem 1.5rem}
